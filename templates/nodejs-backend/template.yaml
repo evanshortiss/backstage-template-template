@@ -28,6 +28,7 @@ spec:
         targetPath: ./source
         values:
           name: ${{ parameters.name }}
+          owner: user:default/${{ user.entity.metadata.name }}
 
     - id: publishSource
       name: Create GitHub Repository
